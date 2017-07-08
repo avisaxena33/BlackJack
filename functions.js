@@ -180,7 +180,7 @@ function hit()
             suit: (suits[randomSuit]),
             rank: (ranks[randomRank])
         };
-    
+    imageAdder();
     myHand.push(card);
     deck.push(card);
     getMyValue();
@@ -318,16 +318,184 @@ function reveal()
 // Adds the images of the cards to the webpage
 function imageAdder()
 {
-    
+    var cardImage = document.createElement("IMG");
     if (randomSuit == "Diamonds")
         {
             if (randomRank == "2")
                 {
-                    
+                    cardImage.src = "images/cards/2d.png";
                 }
+            else if (randomRank == "3")
+                {
+                    cardImage.src = "images/cards/3d.png";
+                }
+            else if (randomRank == "4")
+                {
+                    cardImage.src = "images/cards/4d.png";
+                }
+            else if (randomRank == "5")
+                {
+                    cardImage.src = "images/cards/5d.png";
+                }
+            else if (randomRank == "6")
+                {
+                    cardImage.src = "images/cards/6d.png";
+                }
+            else if (randomRank == "7")
+                {
+                    cardImage.src = "images/cards/7d.png";
+                }
+            else if (randomRank == "8")
+                {
+                    cardImage.src = "images/cards/8d.png";
+                }
+            else if (randomRank == "9")
+                {
+                    cardImage.src = "images/cards/9d.png";
+                }
+            else if (randomRank == "10")
+                {
+                    cardImage.src = "images/cards/10d.png";
+                }
+            else if (randomRank == "Ace")
+                {
+                    cardImage.src = "images/cards/ad.png";
+                }  
         }
+    else if (randomSuit == "Hearts")
+        {
+            if (randomRank == "2")
+                {
+                    cardImage.src = "images/cards/2h.png";
+                }
+            else if (randomRank == "3")
+                {
+                    cardImage.src = "images/cards/3h.png";
+                }
+            else if (randomRank == "4")
+                {
+                    cardImage.src = "images/cards/4h.png";
+                }
+            else if (randomRank == "5")
+                {
+                    cardImage.src = "images/cards/5h.png";
+                }
+            else if (randomRank == "6")
+                {
+                    cardImage.src = "images/cards/6h.png";
+                }
+            else if (randomRank == "7")
+                {
+                    cardImage.src = "images/cards/7h.png";
+                }
+            else if (randomRank == "8")
+                {
+                    cardImage.src = "images/cards/8h.png";
+                }
+            else if (randomRank == "9")
+                {
+                    cardImage.src = "images/cards/9h.png";
+                }
+            else if (randomRank == "10")
+                {
+                    cardImage.src = "images/cards/10h.png";
+                }
+            else if (randomRank == "Ace")
+                {
+                    cardImage.src = "images/cards/ah.png";
+                }   
+        }
+    else if (randomSuit == "Clubs")
+        {
+            if (randomRank == "2")
+                {
+                    cardImage.src = "images/cards/2c.png";
+                }
+            else if (randomRank == "3")
+                {
+                    cardImage.src = "images/cards/3c.png";
+                }
+            else if (randomRank == "4")
+                {
+                    cardImage.src = "images/cards/4c.png";
+                }
+            else if (randomRank == "5")
+                {
+                    cardImage.src = "images/cards/5c.png";
+                }
+            else if (randomRank == "6")
+                {
+                    cardImage.src = "images/cards/6c.png";
+                }
+            else if (randomRank == "7")
+                {
+                    cardImage.src = "images/cards/7c.png";
+                }
+            else if (randomRank == "8")
+                {
+                    cardImage.src = "images/cards/8c.png";
+                }
+            else if (randomRank == "9")
+                {
+                    cardImage.src = "images/cards/9c.png";
+                }
+            else if (randomRank == "10")
+                {
+                    cardImage.src = "images/cards/10c.png";
+                }
+            else if (randomRank == "Ace")
+                {
+                    cardImage.src = "images/cards/ac.png";
+                }  
+        }
+    else if (randomSuit == "Spades")
+        {
+            if (randomRank == "2")
+                {
+                    cardImage.src = "images/cards/2s.png";
+                }
+            else if (randomRank == "3")
+                {
+                    cardImage.src = "images/cards/3s.png";
+                }
+            else if (randomRank == "4")
+                {
+                    cardImage.src = "images/cards/4s.png";
+                }
+            else if (randomRank == "5")
+                {
+                    cardImage.src = "images/cards/5s.png";
+                }
+            else if (randomRank == "6")
+                {
+                    cardImage.src = "images/cards/6s.png";
+                }
+            else if (randomRank == "7")
+                {
+                    cardImage.src = "images/cards/7s.png";
+                }
+            else if (randomRank == "8")
+                {
+                    cardImage.src = "images/cards/8s.png";
+                }
+            else if (randomRank == "9")
+                {
+                    cardImage.src = "images/cards/9s.png";
+                }
+            else if (randomRank == "10")
+                {
+                    cardImage.src = "images/cards/10s.png";
+                }
+            else if (randomRank == "Ace")
+                {
+                    cardImage.src = "images/cards/as.png";
+                }  
+        }
+    cardImage.height = "200";
+    cardImage.width = "100";
+    document.getElementById("pictures").appendChild(cardImage);
 }
-//............................................................................................................
+//...........................................................................................................
 
 
 
