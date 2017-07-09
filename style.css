@@ -12,6 +12,7 @@ body
     position: absolute;
     top: 65%;
     left: 40%;
+    color: white;
 }
 
 #start:active
@@ -30,6 +31,7 @@ body
     position: absolute;
     top: 75%;
     left: 30%;
+    color:white;
 }
 
 #stayer
@@ -40,7 +42,8 @@ body
     font-family: monospace;
     position: absolute;
     top: 75%;
-    left: 50%;   
+    left: 50%;
+    color: white;
 }
 
 #loser
@@ -52,6 +55,41 @@ body
     color: red;
     top: 50%;
     left: 35%;
+}
+
+#pictures
+{
+    padding-right: 5px;
+}
+
+#lul, #lol
+{
+    font-family: monospace;
+    color: black;
+    font-size: 50px;
+}
+
+#dealerPictures
+{
+    padding-top: 100px;
+}
+
+#hander
+{
+    font-size: 60px;
+    font-family: monospace;
+    color:black;
+    padding-right: 50px;
+    display: none;
+}
+
+#dealerHander
+{
+    font-size: 60px;
+    font-family: monospace;
+    color:black;
+    padding-right: 50px;
+    display: none;
 }
 
 
