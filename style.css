@@ -15,6 +15,18 @@ body
     color: white;
 }
 
+#loler 
+{
+    background-color: red;
+    text-align: center;
+    font-size: 36px;
+    font-family: monospace;
+    position: absolute;
+    top: 75%;
+    left: 40%;
+    color: white;
+}
+
 #start:active
 {
     background-color: blue;
@@ -54,7 +66,7 @@ body
     position: absolute;
     color: red;
     top: 50%;
-    left: 35%;
+    left: 55%;
 }
 
 #pictures
@@ -71,7 +83,7 @@ body
 
 #dealerPictures
 {
-    padding-top: 100px;
+    padding-top: 50px;
 }
 
 #hander

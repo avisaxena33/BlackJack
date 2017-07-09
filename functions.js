@@ -262,6 +262,14 @@ function checkUserBust()
 {
     if (myCount > 21)
         {
+            document.getElementById("hitter").style.display ="none";
+            document.getElementById("stayer").style.display = "none";
+            var replayButton = document.createElement("BUTTON");
+            var replayText = document.createTextNode("Play Again!");
+            replayButton.appendChild(replayText);
+            document.body.appendChild(replayButton);
+            replayButton.setAttribute("id","loler");
+            replayButton.onclick = replay;
             dealerImageAdder();
             var spanSign = document.createElement("span");
             var loserSign = document.createTextNode("YOU BUSTED!");
@@ -281,6 +289,14 @@ function checkDealerBust()
 {
     if (dealerCount > 21)
         {
+            document.getElementById("hitter").style.display ="none";
+            document.getElementById("stayer").style.display = "none";
+            var replayButton = document.createElement("BUTTON");
+            var replayText = document.createTextNode("Play Again!");
+            replayButton.appendChild(replayText);
+            document.body.appendChild(replayButton);
+            replayButton.setAttribute("id","loler");
+            replayButton.onclick = replay;
             dealerImageAdder();
             var spanSign = document.createElement("span");
             var loserSign = document.createTextNode("YOU WON, DEALER BUSTED!");
@@ -321,7 +337,14 @@ function dealerTurn()
 function reveal()
 {
     dealerImageAdder();
-    var winner = false;
+    document.getElementById("hitter").style.display ="none";
+    document.getElementById("stayer").style.display = "none";
+    var replayButton = document.createElement("BUTTON");
+    var replayText = document.createTextNode("Play Again!");
+    replayButton.appendChild(replayText);
+    document.body.appendChild(replayButton);
+    replayButton.setAttribute("id","loler");
+    replayButton.onclick = replay;
     
     if (dealerCount > myCount)
         {
@@ -838,5 +861,9 @@ function dealerImageAdder()
         }
 }
 
+function replay()
+{
+    window.location = self.location;
+}
 
 
